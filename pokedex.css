@@ -1,0 +1,27 @@
+#pokedex-entry {
+    width: 150px;
+}
+
+#img-container {
+    background-color: lightgray;
+}
+
+#img-container {
+    border-radius: 5px;
+
+}
+
+#img-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#type-one{
+    background-color: #4cf436;
+    
+}
+
+#type-two {
+    background-color: #b97fc9;
+    color: white;
+}
