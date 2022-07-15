@@ -5,23 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pokedex.css" />
+    <script src="./pokedex.js" defer></script>
     <title>Pokedex</title>
   </head>
   <body>
     <h1>Pokédex</h1>
-    <div id="pokedex-entry">
-      <div id="img-container">
-        <img
-          src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
-          alt="Picture of Bulbasaur"
-        />
-      </div>
-
-      <div>#001</div>
-      <div>Bulbasaur</div>
-      <div>
-        <span id="type-one">Grass</span>
-        <span id="type-two">Poison</span>
+    <div class="pokedex">
+      <div class="pokedex-entry">
+        <div class="img-container">
+          <img
+            src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+            alt="Picture of Bulbasaur"
+          />
+        </div>
+        <div class="pokedex-info">
+          <div>#001</div>
+          <div class="name">Bulbasaur</div>
+          <div class="type-info">
+            <span class="type type-one">Grass</span>
+            <span class="type type-two">Poison</span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
