@@ -11,22 +11,23 @@
   <body>
     <h1>Pokédex</h1>
     <div class="pokedex">
-      <div class="pokedex-entry">
-        <div class="img-container">
-          <img
-            src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
-            alt="Picture of Bulbasaur"
-          />
-        </div>
-        <div class="pokedex-info">
-          <div class="number">#001</div>
-          <div class="name">Bulbasaur</div>
-          <div class="type-info">
-            <span class="type type-one">Grass</span>
-            <span class="type type-two">Poison</span>
+      <template id="pokemon-template">
+        <div class="pokedex-entry">
+          <div class="img-container">
+            <img
+              src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+            />
+          </div>
+          <div class="pokedex-info">
+            <div class="number">#001</div>
+            <div class="name">Bulbasaur</div>
+            <div class="type-info">
+              <span class="type type-one">Grass</span>
+              <span class="type type-two">Poison</span>
+            </div>
           </div>
         </div>
-      </div>
+      </template>
     </div>
   </body>
 </html>

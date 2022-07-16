@@ -26,15 +26,20 @@
     max-height: 100%;
 }
 
-.type-one{
+.type-grass {
     background-color: #4cf436;
    
 }
 
-.type-two {
+.type-poison {
     background-color: #b97fc9;
     color: white;
     
+}
+
+.type-fire {
+    background-color: red;
+    color: white;
 }
 
 .type {
