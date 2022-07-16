@@ -14,11 +14,10 @@
 
 .img-container {
     background-color: lightgray;
-}
-
-.img-container {
     border-radius: 0.25rem;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-container img {

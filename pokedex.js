@@ -1,14 +1,37 @@
+fetch('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=10')
+.then((response) => response.json())
+.then((response) => {
+    console.log(response.results);
+    response.results.forEach(pokemon => fetchPokemon(pokemon.url))
+});
+
+function fetchPokemon(url) {
+    fetch(url).then((response) => {
+    return response.json();
+})
+.then((response) => {
+        const types = response.types.map((entry) => entry.type.name);
+        const img = response.sprites.front_default;
+        const number = response.id;
+        const name = response.name;
+        addToPokedex(createPokemon(number, name, types, img));
+});
+}
+
+
+
+
 function addToPokedex(pokemon) {
     const pokedex = document.querySelector('.pokedex');
     pokedex.appendChild(pokemon);
 }
 
-function createPokemon(number, name, types) {
+function createPokemon(number, name, types, img) {
     const entry = document.querySelector('#pokemon-template').content;
     const pokemon = entry.cloneNode(true); // clone the node
     pokemon.querySelector('.number').innerText = `#${number}`; // DOM-targeting
     pokemon.querySelector('.name').innerText = name; // DOM-targeting
-    pokemon.querySelector('.img-container img').src = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${number}.png`; // DOM-targeting
+    pokemon.querySelector('.img-container img').src = img; // DOM-targeting
     
     if(types) { 
         const typeInfoElement = pokemon.querySelector('.type-info');
@@ -27,9 +50,9 @@ function createPokemon(number, name, types) {
 
 }
 
-
+/*
 addToPokedex(createPokemon('001', 'Bulbasaur',  ["Grass", "Poison"]));
 addToPokedex(createPokemon('002', 'Ivysaur', ["Grass", "Poison"]));
 addToPokedex(createPokemon('003', 'Venusaur', ["Grass", "Poison"]));
 addToPokedex(createPokemon('004', 'Charmander', ["Fire"]));
-
+*/
