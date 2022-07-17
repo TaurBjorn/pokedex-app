@@ -36,7 +36,7 @@ function addToPokedex(pokemon) {
 function createPokemon(number, name, types, img) {
     const entry = document.querySelector('#pokemon-template').content;
     const pokemon = entry.cloneNode(true); // clone the node
-    pokemon.querySelector('.number').innerText = `#${number}`; // DOM-targeting
+    pokemon.querySelector('.number').innerText = `#${number.toString().padStart(3, '0')}`; // DOM-targeting
     pokemon.querySelector('.name').innerText = name[0].toUpperCase() + name.substring(1);; // DOM-targeting
     pokemon.querySelector('.img-container img').src = img; // DOM-targeting
     
