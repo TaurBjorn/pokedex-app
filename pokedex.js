@@ -1,5 +1,5 @@
 // Call and order data from the pokeapi
-fetch('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=10')
+fetch('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=150')
 .then((response) => response.json())
 .then(async (response) => {
     console.log(response.results);
