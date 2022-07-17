@@ -82,11 +82,15 @@ h1 {
 }
 
 .number {
-    color: white;
+    color: black;
+    font-family: "Flexo-Medium",arial,sans-serif;
+    font-size: 0.85rem;
 }
 
 .name {
-    color: white;
+    color: black;
+    font-family: "Flexo-Medium",arial,sans-serif;
+
 }
 
 .type-grass {
@@ -119,12 +123,59 @@ h1 {
     background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
 }
 
+.type-normal {
+    background-color: #a4acaf;
+}
+
+.type-electric {
+    background-color: #eed535;
+}
+
+.type-ground {
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);;
+}
+
+.type-fairy {
+    background-color: #fdb9e9;;
+}
+
+.type-fighting {
+    background-color: #d56723;
+}
+
+.type-psychic {
+    background-color: #f366b9;
+}
+
+.type-rock {
+    background-color: #a38c21;
+}
+
+.type-ice {
+    background-color: #51c4e7;
+}
+
+.type-steel {
+    background-color: #9eb7b8;
+}
+
+.type-ghost {
+    background-color: #7b62a3;
+}
+
+.type-dragon {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);;
+}
+
 .type {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 0.25rem;
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: black;
+    
 }
 
 .pokedex-info{
