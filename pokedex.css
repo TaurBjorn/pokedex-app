@@ -84,12 +84,14 @@ h1 {
 .number {
     color: black;
     font-family: "Flexo-Medium",arial,sans-serif;
+    font-weight: bold;
     font-size: 0.85rem;
 }
 
 .name {
     color: black;
     font-family: "Flexo-Medium",arial,sans-serif;
+    font-weight: bold;
 
 }
 
@@ -174,7 +176,9 @@ h1 {
     padding-right: 1rem;
     border-radius: 0.25rem;
     font-family: "Flexo-Medium",arial,sans-serif;
+    font-weight: bold;
     color: black;
+    overflow: clip;
     
 }
 
