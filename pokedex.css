@@ -177,7 +177,8 @@ h1 {
     border-radius: 0.25rem;
     font-family: "Flexo-Medium",arial,sans-serif;
     font-weight: bold;
-    overflow: clip;
+    /*overflow: clip;*/
+    overflow: hidden;
     
 }
 
